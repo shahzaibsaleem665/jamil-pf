@@ -12,11 +12,11 @@ function Header() {
         </div>
         
         <div className="header__right">
-            <p className='home'>Home</p>
-            <p className='projects'>Projects</p>
-            <p className='research'>Reasearch work</p>
-            <p className='about'>About us</p>
-            <p className='contact'>Contact us</p>
+            <p className='header__home'>Home</p>
+            <p className='header__projects'>Projects</p>
+            <p className='header__research'>Reasearch work</p>
+            <p className='header__about'>About us</p>
+            <p className='header__contact'>Contact us</p>
         </div>
     </div>
   )
