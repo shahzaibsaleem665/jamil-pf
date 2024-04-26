@@ -39,7 +39,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;  
     align-items: center;
-    background-color: white;
+    margin-bottom: 50px;
 }
 .home__me > .heading {
     margin: 15px;
@@ -50,6 +50,8 @@ justify-content: center;
 .home__me > p {
     margin: 10px;
     padding: 5px;
+    letter-spacing: 2px;
+    line-height: 30px;
     width: 80%;
     font-size: 18px;
     text-align: left;

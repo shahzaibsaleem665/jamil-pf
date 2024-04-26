@@ -1,7 +1,5 @@
 import React from 'react'
 import './Home.css'
-import DP from '../assets/DP.jpeg'
-import { colors } from '@mui/material'
 import Cards from '../Components/Cards'
 
 function Home() {

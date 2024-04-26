@@ -3,11 +3,65 @@
 .cards{
     display: flex;
     margin: auto;
-    width: 100%;
-    
+    background-color: #2B80B8;
+    height: auto;
+    justify-content: center;
+    align-content: center;
 }
-h1 {
+.cards__contentLeft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+}
+.cards__contentLeft > h1 {
     font-family: Lugrasimo;
     letter-spacing: 10px;
     font-size: 60px;
+    color: black;
+    text-align: left;
+    margin-top: 30px;
+    padding: 5px;
+}
+.cards__contentLeft > p {
+    font-size: 18px;
+    font-family: Roboto;
+    padding: 5px;
+}
+.cards__contentRight {
+    width: 50%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+.cards__top  {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card__contentSelf {
+    width: 270px;
+    height: 200px;
+    margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+.card__imgSection > .MuiSvgIcon-root {
+   font-size: 30px;
+   margin: 5px;
+   color: #2B80B8;
+}
+.card__contentSection { 
+    margin: 5px;
+    margin-top: 0px;
+}
+.card__contentSection > p {
+    margin-top: 5px;
+}
+.card__logoSection { 
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 10px;
 }
