@@ -1,0 +1,13 @@
+.socialBar {
+    position: fixed;
+    top: 65%;
+    left: 92%;
+}
+.socialBar > .MuiSvgIcon-root {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 10px !important;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
