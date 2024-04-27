@@ -1,67 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 .cards{
     display: flex;
-    margin: auto;
-    background-color: #2B80B8;
-    height: auto;
-    justify-content: center;
-    align-content: center;
-}
-.cards__contentLeft {
-    width: 30%;
-    display: flex;
     flex-direction: column;
-    background-color: pink;
-}
-.cards__contentLeft > h1 {
-    font-family: Lugrasimo;
-    letter-spacing: 10px;
-    font-size: 60px;
-    color: black;
-    text-align: left;
-    margin-top: 30px;
-    padding: 5px;
-}
-.cards__contentLeft > p {
-    font-size: 18px;
-    font-family: Roboto;
-    padding: 5px;
-}
-.cards__contentRight {
-    width: 50%;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-}
-.cards__top  {
-    display: flex;
-    flex-wrap: wrap;
-}
-.card__contentSelf {
-    width: 270px;
-    height: 200px;
-    margin: 10px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    word-wrap: break-word;
+    width: 250px;
+    height: 250px;
     border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: whitesmoke;
+    font-family: Roboto;
 }
-.card__imgSection > .MuiSvgIcon-root {
-   font-size: 30px;
-   margin: 5px;
-   color: #2B80B8;
+.cards__top {
+padding: 2px;
 }
-.card__contentSection { 
-    margin: 5px;
-    margin-top: 0px;
+.cards__top  .MuiSvgIcon-root {
+    font-size: 40px;
+    color: #2A7FB8 !important;
+    
 }
-.card__contentSection > p {
-    margin-top: 5px;
+.cards__middle {
+    padding: 5px;
 }
-.card__logoSection { 
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
+.cards__middle > h5 {
+    font-size: 24px;
+}
+.cards__middle > p {
+font-size: 16px;
+margin-top: 20px;
+}
+.cards__bottom {
+    font-size: 14px;
+    background-color: #287FB8;
+    width: fit-content;
+    margin-left: 5px;
     margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2px;
 }

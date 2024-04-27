@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: black;
     position: sticky;
+    z-index: 1;
 }
 .header__left  {
     width: 40%;
