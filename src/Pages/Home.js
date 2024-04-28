@@ -6,6 +6,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import Gallery from '../Components/Gallery';
 
 function Home() {
   return (
@@ -44,6 +45,12 @@ function Home() {
             <Cards icon={<ConnectWithoutContactIcon />} title='Soft Skills' description='Effective communication skills and expertise in Spanish, Korean and English and supervision of interns ans students.' text='Learn more' />
           </div>
         </div>
+
+
+      {/* Gallery Component for pictures */}
+      <div className="home__gallery">
+      <Gallery />
+      </div>
     </div>
   )
 }

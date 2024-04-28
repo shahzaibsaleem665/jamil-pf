@@ -96,3 +96,7 @@ justify-content: center;
     flex-wrap: wrap;
     width: 45%;   
 }
+.home__gallery {
+    display: flex;
+    justify-content: center;
+}
