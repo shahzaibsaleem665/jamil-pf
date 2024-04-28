@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import skills from '../assets/skills.svg'
 import Cards from '../Components/Cards'
@@ -7,8 +7,37 @@ import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Gallery from '../Components/Gallery';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { IconButton } from '@mui/material';
+
 
 function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Show the button when the page is scrolled down
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='home'>
       
@@ -50,8 +79,17 @@ function Home() {
       {/* Gallery Component for pictures */}
       <div className="home__gallery">
       <Gallery />
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          
+        >
+          <KeyboardArrowUpIcon />
+        </button>
+      )}
       </div>
-    </div>
+      
+    </div>  
   )
 }
 

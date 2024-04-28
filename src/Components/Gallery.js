@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Gallery.css'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -21,6 +21,7 @@ import pic_20 from '../assets/pictures/pic_20.jpeg'
 
 
 function Gallery() {
+  const [enlargedImg, setEnlargedImg] = useState(null);
 
     const itemData = [
       {
@@ -90,7 +91,23 @@ function Gallery() {
     rows: 2,
         },
         // Add more items as needed
-      ];
+      ]; // array of the images finish here
+
+
+      const handleImageClick = (imgSrc) => {
+        setEnlargedImg(imgSrc);
+      };
+    
+      const handleCloseEnlargedImg = () => {
+        setEnlargedImg(null);
+      };
+
+
+
+
+
+
+
   return (
     <div className='gallery'>
         <h1>Gallery</h1>
@@ -98,11 +115,18 @@ function Gallery() {
             <ImageList variant="quilted" rowHeight={150} cols={4}>
                 {itemData.map((item) => (
                      <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                     <img src={item.img} alt={item.title} loading="lazy" />
+                     <img src={item.img} alt={item.title} loading="lazy"  onClick={() => handleImageClick(item.img)} />
                    </ImageListItem>
                 ))}
             </ImageList>
         </div>
+        {enlargedImg && (
+        <div className="enlarged__imageOverlay" onClick={handleCloseEnlargedImg}>
+          <div className="enlarged__imageContainer">
+            <img src={enlargedImg} alt="Enlarged Image" />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
