@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Home />
       <SocialBar />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

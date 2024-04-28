@@ -1,7 +1,7 @@
 import React from 'react'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
 
 import './SocialBar.css'
 
@@ -10,8 +10,8 @@ function SocialBar() {
   return (
     <div className='socialBar'>
         <LinkedInIcon />
-        <InstagramIcon />
-        <FacebookIcon />
+        <GoogleIcon />
+        <InsertLinkIcon />
     </div>
   )
 }
