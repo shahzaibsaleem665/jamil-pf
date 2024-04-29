@@ -22,7 +22,21 @@
     height: 50px;
     margin: 10px;
 }
+.header__right > a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 .header__right > p {
     margin: 10px; 
     color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+.header__right > p:hover,
+.header__right > p.active{
+color: #287FB7;
+font-weight: bold;
+
 }

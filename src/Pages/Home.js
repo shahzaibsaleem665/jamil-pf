@@ -8,7 +8,6 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Gallery from '../Components/Gallery';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { IconButton } from '@mui/material';
 
 
 function Home() {

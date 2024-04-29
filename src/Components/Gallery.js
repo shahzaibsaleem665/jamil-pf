@@ -10,10 +10,8 @@ import pic_12 from '../assets/pictures/pic_12.jpeg'
 import pic_13 from '../assets/pictures/pic_13.jpeg'
 import pic_14 from '../assets/pictures/pic_14.jpeg'
 import pic_15 from '../assets/pictures/pic_15.jpeg'
-import pic_16 from '../assets/pictures/pic_16.jpeg'
-import pic_17 from '../assets/pictures/pic_17.jpeg'
 import pic_18 from '../assets/pictures/pic_18.jpeg'
-import pic_19 from '../assets/pictures/pic_19.jpeg'
+
 import pic_20 from '../assets/pictures/pic_20.jpeg'
 
 
@@ -123,7 +121,7 @@ function Gallery() {
         {enlargedImg && (
         <div className="enlarged__imageOverlay" onClick={handleCloseEnlargedImg}>
           <div className="enlarged__imageContainer">
-            <img src={enlargedImg} alt="Enlarged Image" />
+            <img src={enlargedImg} alt="Enlarged pic" />
           </div>
         </div>
       )}
