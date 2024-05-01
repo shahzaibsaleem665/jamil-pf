@@ -5,7 +5,7 @@ import Footer from './Components/Footer';
 import SocialBar from './Components/SocialBar';
 import Header from './Pages/Header';
 import Home from './Pages/Home';
-import Projects from './Pages/Projects';
+import Publicaitons from './Pages/Publications';
 import { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -18,8 +18,8 @@ function App() {
         <Header />
         <div className="app__body">
           <Switch>
-            <Route path='/projects'>
-              <Projects />
+            <Route path='/publications'>
+             <Publicaitons />
             </Route>
             <Route path='/'>
               <Home />

@@ -8,7 +8,7 @@ function Header() {
   const history = useHistory();
   const location = useLocation();
 
-  const listItems = ['Home', 'Projects', 'Research Work', 'About me', 'Contact me'];
+  const listItems = ['Home', 'Publications', 'Research Work', 'About me', 'Contact me'];
 
   useEffect(() => {
     // Extract the selected button from the pathname
