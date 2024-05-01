@@ -1,0 +1,25 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects__top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+justify-content: center;
+background-image: url('../assets/circuit.jpg');
+background-position: center;
+background-size: cover;
+height: 200px;
+}
+.projects__top > h1 {
+    color: white;
+    font-size: 80px;
+}
+.projects__content {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    background-color: gray ;
+}

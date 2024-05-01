@@ -5,20 +5,31 @@ import Footer from './Components/Footer';
 import SocialBar from './Components/SocialBar';
 import Header from './Pages/Header';
 import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import { useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
+
+
   return (
-    <div className="app">
-       <Router>
-        <div>
-      <Header />
-      <Home />
-      <SocialBar />
-      <Footer />
+    <Router>
+      <div className="app">
+        <Header />
+        <div className="app__body">
+          <Switch>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+        <SocialBar />
+        <Footer />
       </div>
-      </Router>
-      
-    </div>
+    </Router>
   );
 }
 
