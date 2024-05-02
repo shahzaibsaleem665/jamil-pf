@@ -2,7 +2,7 @@ import React from 'react'
 import './Work.css'
 import LaunchIcon from '@mui/icons-material/Launch';
 
-function Work({title, description, year, link}) {
+function Work({title, description, year, link, value}) {
   return (
     <div className='work'>
         <div className="work__content">
@@ -13,7 +13,7 @@ function Work({title, description, year, link}) {
             <p>{year}</p>
         </div>
         <div className="work__links">
-            <p>{link}{<LaunchIcon />}</p>
+            <a href={value} target='blank'><p>{link}{<LaunchIcon />}</p></a>
         </div>
     </div>
   )

@@ -6,7 +6,7 @@ import SocialBar from './Components/SocialBar';
 import Header from './Pages/Header';
 import Home from './Pages/Home';
 import Publicaitons from './Pages/Publications';
-import { useEffect } from 'react';
+
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Home.css'
 import skills from '../assets/skills.svg'
 import Cards from '../Components/Cards'
