@@ -20,6 +20,8 @@ height: 200px;
 .publications__content {
     display: flex;
     width: 80%;
-    padding: 20px;
-    background-color: pink ;
+    padding: 5px;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
 }

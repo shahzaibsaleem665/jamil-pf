@@ -1,0 +1,10 @@
+.backToTop > button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: -560px;
+}

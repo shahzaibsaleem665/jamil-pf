@@ -7,36 +7,11 @@ import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Gallery from '../Components/Gallery';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import BackToTop from '../Components/BackToTop';
 
 
 function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Show the button when the page is scrolled down
-    const handleScroll = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  
   return (
     <div className='home'>
       
@@ -44,7 +19,7 @@ function Home() {
        <div className="home__container">
         <div className="home__containerText">
         <p className='title'>I am <strong style={{color: 'white'}}>Jamil Hassan.</strong></p>
-        <p>"Pushing boundaries of research in power electronic for a sustainable tomorrow."</p>
+        <p>"A <strong>Power Electronics</strong> Engineer and Researcher"</p>
         </div>
        </div>
 
@@ -78,14 +53,7 @@ function Home() {
       {/* Gallery Component for pictures */}
       <div className="home__gallery">
       <Gallery />
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          
-        >
-          <KeyboardArrowUpIcon />
-        </button>
-      )}
+      <BackToTop />
       </div>
       
     </div>  
