@@ -2,6 +2,8 @@ import React from 'react'
 import './Cards.css'
 import { IconButton } from '@mui/material'
 
+import LaunchIcon from '@mui/icons-material/Launch';
+
 function Cards({ icon, title, description, text}) {
   return (
     <div className='cards'>
@@ -13,7 +15,7 @@ function Cards({ icon, title, description, text}) {
         <p>{description}</p>
         </div>
         <div className="cards__bottom">
-<p>{text}</p>
+<p>{text}<LaunchIcon /></p>
         </div>
     </div>
   )

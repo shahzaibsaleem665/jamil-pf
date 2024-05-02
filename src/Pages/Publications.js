@@ -1,6 +1,7 @@
 import React from 'react'
 import './Publications.css'
 import Work from '../Components/Work'
+import BackToTop from '../Components/BackToTop'
 
 function Projects() {
   return (
@@ -29,6 +30,7 @@ Bidirectional soft switching push–pull resonant converter over wide range of b
           link='Learn more'
           />
         </div>
+        <BackToTop />
     </div>
   )
 }
