@@ -43,7 +43,7 @@ function Home() {
       {/* Main banner component */}
        <div className="home__container">
         <div className="home__containerText">
-        <p className='title'>I am <strong style={{color: 'black'}}>Jamil Hassan.</strong></p>
+        <p className='title'>I am <strong style={{color: 'white'}}>Jamil Hassan.</strong></p>
         <p>"Pushing boundaries of research in power electronic for a sustainable tomorrow."</p>
         </div>
        </div>

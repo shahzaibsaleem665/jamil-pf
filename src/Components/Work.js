@@ -1,18 +1,18 @@
 import React from 'react'
 import './Work.css'
 
-function Work() {
+function Work({title, description, year, link}) {
   return (
     <div className='work'>
         <div className="work__content">
-            <h3>Title</h3>
+            <h2>{title}</h2>
         </div>
         <div className="work__details">
-            <h4>description</h4>
-            <p>Year</p>
+            <h5>{description}</h5>
+            <p>{year}</p>
         </div>
         <div className="work__links">
-            <p>Link to work</p>
+            <p>{link}</p>
         </div>
     </div>
   )
