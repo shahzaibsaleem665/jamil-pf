@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import Publicaitons from './Pages/Publications';
 
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import Research from './Pages/Research';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
           <Switch>
             <Route path='/publications'>
              <Publicaitons />
+            </Route>
+            <Route path='/research-work'>
+            <Research />
             </Route>
             <Route path='/'>
               <Home />
