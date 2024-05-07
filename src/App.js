@@ -10,6 +10,7 @@ import Publicaitons from './Pages/Publications';
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Research from './Pages/Research';
 import Contact from './Pages/Contact';
+import About from './Pages/About';
 
 function App() {
 
@@ -31,10 +32,15 @@ function App() {
             <Route path='/contact-me'>
             <Contact />
             </Route>
+            <Route path='/about-me'>
+            <About />
+            <SocialBar />
+            </Route>
             <Route path='/'>
               <Home />
               <SocialBar />
             </Route>
+            
           </Switch>
         </div>
         <Footer />

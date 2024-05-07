@@ -1,48 +1,66 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const app = express();
+const PORT = 8000;
 
-// Middleware
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Routes
-app.post('/send-mail', (req, res) => {
-    const { fullName, email, enquiry } = req.body;
-
-    // Create a transporter
-    let transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'shahzaibsaleem@gmail.com', // Your Gmail email address
-            pass: '' // Your Gmail password
-        }
-    });
-
-    // Construct email message
-    let mailOptions = {
-        from: '"Contact Form" <your-email@gmail.com>',
-        to: 'shahzaibsaleem@gmail.com', // Recipient's email address
-        subject: 'New Enquiry',
-        text: `Name: ${fullName}\nEmail: ${email}\nEnquiry: ${enquiry}`
-    };
-    console.log(mailOptions);
-    // Send email
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log(error);
-            res.status(500).send('Error sending email');
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.status(200).send('Email sent successfully');
-        }
-    });
+// Body parser middleware
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());\
+app.use((cors));
+app.use(express.json({ limit: '25mb'}));
+app.use(express.urlencoded({ limit: '25mb'}));
+app.use ((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
 });
 
-// Start server
-const PORT = process.env.PORT || 3000;
+function sendEmail ({fullName, email, enquiry}) {
+    return new Promise((resolve, reject) => {
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'formhandling01@gmail.com',
+                pass: 'Form@handling10'
+            },
+
+        });
+
+        const mail_configs = {
+            from: 'formhandling01@gmail.com',
+            to: email,
+            name: fullName,
+            message: enquiry,
+        };
+
+        transporter.sendMail(mail_configs, function(error, info) {
+            if (error) {
+                console.log(error);
+                return reject({ message: `An error has occured` });
+            }
+            return resolve({ message: 'Email sent successfully!'});
+        })
+    })
+}
+
+app.get('/', (req, res) => {
+    sendEmail()
+    .then((response) => res.send(response.message))
+    .catch((error) => res.status(500).send(error.message));
+})
+// POST route to handle form submission
+app.post('/send_email', (req, res) => {
+    sendEmail(req.body)
+    .then((response) => res.send(response.message))
+    .catch((error) => res.status(500).send(error.message));
+})
+
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`nodemailer is listening at http://localhost:${PORT}`)
+})
+
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
