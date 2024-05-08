@@ -1,0 +1,34 @@
+.about {
+    display: flex;
+    background-color: purple;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.about__main {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+}
+.about__mainLeft {
+width: 50%;
+background-color: pink;
+height: auto;
+
+margin-top: 10px;
+}
+.about__mainLeft > img {
+    height: 360px;
+    width: auto;
+    border-radius: 40% 60% 30% 40% / 50% 30% 70% 80%;
+    padding: 20px;
+    background-color: black;
+
+}
+.about__mainRight {
+    width: 50%;
+    background-color: skyblue;
+}

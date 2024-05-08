@@ -15,7 +15,7 @@ function Contact() {
             <div className="contact__form">
             <div className="contact__formLeft">
             <h1>Get in touch!</h1>
-            <h4>Contact me via following channels or filll out the form</h4>
+            <h4>Contact me via following channels or fill out the form</h4>
             <div className="contact__methods">
             <div className="contact__mail">
             <MailIcon />
