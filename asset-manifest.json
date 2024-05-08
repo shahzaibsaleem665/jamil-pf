@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jamil-pf/static/css/main.f715b771.css",
-    "main.js": "/jamil-pf/static/js/main.11166a9c.js",
+    "main.css": "/jamil-pf/static/css/main.7c7eccc3.css",
+    "main.js": "/jamil-pf/static/js/main.651161b4.js",
     "static/js/453.9c1a384f.chunk.js": "/jamil-pf/static/js/453.9c1a384f.chunk.js",
     "static/media/contact.jpg": "/jamil-pf/static/media/contact.43008489f92b7d1a9aff.jpg",
     "static/media/home.jpg": "/jamil-pf/static/media/home.6b95f565647a708eef80.jpg",
@@ -14,6 +14,7 @@
     "static/media/pic_10.jpeg": "/jamil-pf/static/media/pic_10.531e0f4d7cee7879c0b2.jpeg",
     "static/media/pic_20.jpeg": "/jamil-pf/static/media/pic_20.36289a158ba89617a05d.jpeg",
     "static/media/pic_11.jpeg": "/jamil-pf/static/media/pic_11.d667096a25609395f32f.jpeg",
+    "static/media/about.jpeg": "/jamil-pf/static/media/about.550f94b8df3471f161e6.jpeg",
     "static/media/pic_18.jpeg": "/jamil-pf/static/media/pic_18.550f94b8df3471f161e6.jpeg",
     "static/media/research.jpg": "/jamil-pf/static/media/research.ef4a791e5bd181329da9.jpg",
     "static/media/publications.jpg": "/jamil-pf/static/media/publications.adc66021c32218e017f0.jpg",
@@ -21,12 +22,12 @@
     "static/media/white.png": "/jamil-pf/static/media/white.0e0fde847d1ac31324f9.png",
     "static/media/cards.svg": "/jamil-pf/static/media/cards.2201e983496b507ecaa3.svg",
     "index.html": "/jamil-pf/index.html",
-    "main.f715b771.css.map": "/jamil-pf/static/css/main.f715b771.css.map",
-    "main.11166a9c.js.map": "/jamil-pf/static/js/main.11166a9c.js.map",
+    "main.7c7eccc3.css.map": "/jamil-pf/static/css/main.7c7eccc3.css.map",
+    "main.651161b4.js.map": "/jamil-pf/static/js/main.651161b4.js.map",
     "453.9c1a384f.chunk.js.map": "/jamil-pf/static/js/453.9c1a384f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f715b771.css",
-    "static/js/main.11166a9c.js"
+    "static/css/main.7c7eccc3.css",
+    "static/js/main.651161b4.js"
   ]
 }
