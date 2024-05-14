@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jamil-pf/static/css/main.c8d72b85.css",
+    "main.css": "/jamil-pf/static/css/main.025185b5.css",
     "main.js": "/jamil-pf/static/js/main.5ca9b9aa.js",
     "static/js/453.9c1a384f.chunk.js": "/jamil-pf/static/js/453.9c1a384f.chunk.js",
     "static/media/contact.jpg": "/jamil-pf/static/media/contact.43008489f92b7d1a9aff.jpg",
@@ -22,12 +22,12 @@
     "static/media/white.png": "/jamil-pf/static/media/white.0e0fde847d1ac31324f9.png",
     "static/media/cards.svg": "/jamil-pf/static/media/cards.2201e983496b507ecaa3.svg",
     "index.html": "/jamil-pf/index.html",
-    "main.c8d72b85.css.map": "/jamil-pf/static/css/main.c8d72b85.css.map",
+    "main.025185b5.css.map": "/jamil-pf/static/css/main.025185b5.css.map",
     "main.5ca9b9aa.js.map": "/jamil-pf/static/js/main.5ca9b9aa.js.map",
     "453.9c1a384f.chunk.js.map": "/jamil-pf/static/js/453.9c1a384f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8d72b85.css",
+    "static/css/main.025185b5.css",
     "static/js/main.5ca9b9aa.js"
   ]
 }
