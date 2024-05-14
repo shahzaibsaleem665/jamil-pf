@@ -14,19 +14,14 @@
     background-color: white;
     scrollbar-width: thin;
     scrollbar-color: #cecccc transparent;
+    cursor: pointer;
     
     &::-webkit-scrollbar {
         width: 8px; /* Width of the scrollbar */
         background-color: transparent;
         border: 2px solid #999;
-   
-      }
-    
+      }   
 }
-
-
-/* Gallery.css */
-
 .enlarged__imageOverlay {
     position: fixed;
     top: 0;

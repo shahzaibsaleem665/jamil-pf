@@ -34,7 +34,7 @@ function App() {
             </Route>
             <Route path='/about-me'>
             <About />
-            <SocialBar />
+            <SocialBar iconColor='white' />  { /* using props to render icons in whit ecolor on different page*/}
             </Route>
             <Route path='/'>
               <Home />
