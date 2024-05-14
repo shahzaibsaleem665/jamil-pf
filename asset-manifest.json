@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/jamil-pf/static/css/main.9a869546.css",
-    "main.js": "/jamil-pf/static/js/main.b8b6b5b9.js",
+    "main.css": "/jamil-pf/static/css/main.dd4818b9.css",
+    "main.js": "/jamil-pf/static/js/main.5ca9b9aa.js",
     "static/js/453.9c1a384f.chunk.js": "/jamil-pf/static/js/453.9c1a384f.chunk.js",
     "static/media/contact.jpg": "/jamil-pf/static/media/contact.43008489f92b7d1a9aff.jpg",
     "static/media/home.jpg": "/jamil-pf/static/media/home.6b95f565647a708eef80.jpg",
     "static/media/circuit.jpg": "/jamil-pf/static/media/circuit.e6708aa709d02d7780d1.jpg",
-    "static/media/about-bg.jpg": "/jamil-pf/static/media/about-bg.c05abaddea0a4d5b0eb3.jpg",
     "static/media/pic_12.jpeg": "/jamil-pf/static/media/pic_12.edaa7f290857a615c2ae.jpeg",
     "static/media/pic_15.jpeg": "/jamil-pf/static/media/pic_15.f7cd552a02c74f616e12.jpeg",
     "static/media/pic_13.jpeg": "/jamil-pf/static/media/pic_13.33885169796909b54f1f.jpeg",
@@ -23,12 +22,12 @@
     "static/media/white.png": "/jamil-pf/static/media/white.0e0fde847d1ac31324f9.png",
     "static/media/cards.svg": "/jamil-pf/static/media/cards.2201e983496b507ecaa3.svg",
     "index.html": "/jamil-pf/index.html",
-    "main.9a869546.css.map": "/jamil-pf/static/css/main.9a869546.css.map",
-    "main.b8b6b5b9.js.map": "/jamil-pf/static/js/main.b8b6b5b9.js.map",
+    "main.dd4818b9.css.map": "/jamil-pf/static/css/main.dd4818b9.css.map",
+    "main.5ca9b9aa.js.map": "/jamil-pf/static/js/main.5ca9b9aa.js.map",
     "453.9c1a384f.chunk.js.map": "/jamil-pf/static/js/453.9c1a384f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a869546.css",
-    "static/js/main.b8b6b5b9.js"
+    "static/css/main.dd4818b9.css",
+    "static/js/main.5ca9b9aa.js"
   ]
 }
