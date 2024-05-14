@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Contact.css'
 import MailIcon from '@mui/icons-material/Mail';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import BackToTop from '../Components/BackToTop';
 function Contact() {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');

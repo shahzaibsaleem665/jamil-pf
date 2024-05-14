@@ -96,7 +96,7 @@
 
 .contact__methods {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .contact__mail,.contact__phone  {
     display: flex;
