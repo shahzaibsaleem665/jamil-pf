@@ -64,10 +64,3 @@ margin-top: 10px;
     color: white;
    
 }
-.work__links > p > .MuiSvgIcon-root {
-    font-size: 22px;
-
-}
-.work__links > a > p:hover {
-    font-weight: bold;
-}

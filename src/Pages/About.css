@@ -46,7 +46,23 @@
     font-size: 80px;
 }
 .about__mainRight > p {
-    font-size: 16px;
-    width: 98%;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 15px;
     justify-content: flex-start;
+}
+.about__button {
+    width: 15%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #287FB8;
+    margin-top: 10px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about__button > .MuiSvgIcon-root {
+    font-size: 22px
 }
