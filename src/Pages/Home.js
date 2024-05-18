@@ -39,7 +39,7 @@ function Home() {
           </div>
 
           <div className="home__cardsRight">
-            <Cards icon={<BuildCircleIcon />} title='Equipments and Tools' description='Proficiency in using a wide range of equipments and tools, including oscilloscopes, power analyzers, LCR meters.' text='Learn more' />
+            <Cards icon={<BuildCircleIcon />} title='Equipments and Tools' description='Proficiency in using a wide range of equipments and tools, including oscilloscopes, power analyzers, LCR meters.' text='Learn more'  />
 
             <Cards icon={<CodeIcon />} title='Coding Languages' description='Experienced in C++ and Java with a strong understanding of object-oriented programming principles and their applications.' text='Learn more' />
 
