@@ -62,7 +62,14 @@
     font-size: 18px;
     align-items: center;
     justify-content: space-between;
+    color: white;
+    
 }
+.about__button:hover  {
+    cursor: pointer;
+}
+
 .about__button > .MuiSvgIcon-root {
     font-size: 22px
+
 }

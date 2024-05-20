@@ -16,11 +16,25 @@
   position: relative;
   width: 500px;
   max-width: 90%;
-  max-height: 90%;
-  background: rgb(211, 211, 211);
+  max-height: 75%;
+  background: white;
   padding: 20px;
   border-radius: 10px;
   overflow-y: auto; /* Enable scrolling if content exceeds popup height */
+}
+
+
+.popup__inner::-webkit-scrollbar {
+  width: 5px; /* Adjust the width of the scrollbar */
+}
+
+.popup__inner::-webkit-scrollbar-track {
+  background-color: transparent; /* Make the scrollbar track transparent */
+}
+
+.popup__inner::-webkit-scrollbar-thumb {
+  background-color: #CCC; /* Light color for scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
 
 .popup__header {
@@ -28,6 +42,9 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  height: 40px;
+  padding: 5px;
+  background-color: #CCC;
 }
 
 .popup__header h2 {
@@ -40,7 +57,5 @@
   font-size: 24px;
   width: 30px;
   align-items: center;
-  border-radius: 5px;
   justify-content: center;
-  background-color: whitesmoke
 }
