@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jamil-pf/static/css/main.0db4c11d.css",
-    "main.js": "/jamil-pf/static/js/main.96791f4e.js",
+    "main.css": "/jamil-pf/static/css/main.ba989658.css",
+    "main.js": "/jamil-pf/static/js/main.3ae3c033.js",
     "static/js/453.9c1a384f.chunk.js": "/jamil-pf/static/js/453.9c1a384f.chunk.js",
     "static/media/contact.jpg": "/jamil-pf/static/media/contact.43008489f92b7d1a9aff.jpg",
     "static/media/home.jpg": "/jamil-pf/static/media/home.6b95f565647a708eef80.jpg",
@@ -12,22 +12,29 @@
     "static/media/pic_14.jpeg": "/jamil-pf/static/media/pic_14.db9455d240efd731719f.jpeg",
     "static/media/pic_9.jpeg": "/jamil-pf/static/media/pic_9.9f39b0d875970fbf69ec.jpeg",
     "static/media/pic_10.jpeg": "/jamil-pf/static/media/pic_10.531e0f4d7cee7879c0b2.jpeg",
+    "static/media/research_work_1.jpeg": "/jamil-pf/static/media/research_work_1.0813030aa76caeb1badf.jpeg",
     "static/media/pic_20.jpeg": "/jamil-pf/static/media/pic_20.36289a158ba89617a05d.jpeg",
+    "static/media/research_work_9.jpeg": "/jamil-pf/static/media/research_work_9.5e6fbad339c0bf177673.jpeg",
     "static/media/pic_11.jpeg": "/jamil-pf/static/media/pic_11.d667096a25609395f32f.jpeg",
     "static/media/about.jpeg": "/jamil-pf/static/media/about.550f94b8df3471f161e6.jpeg",
     "static/media/pic_18.jpeg": "/jamil-pf/static/media/pic_18.550f94b8df3471f161e6.jpeg",
+    "static/media/research_work_6.jpeg": "/jamil-pf/static/media/research_work_6.c5bf5aec04ed5602dd72.jpeg",
+    "static/media/research_work_7.jpeg": "/jamil-pf/static/media/research_work_7.5815faeba6fbdc6e9993.jpeg",
+    "static/media/research_work_3.jpeg": "/jamil-pf/static/media/research_work_3.ca5dfedd924bff0d5742.jpeg",
+    "static/media/research_work_2.jpeg": "/jamil-pf/static/media/research_work_2.599403b82f738f2596a4.jpeg",
     "static/media/research.jpg": "/jamil-pf/static/media/research.ef4a791e5bd181329da9.jpg",
-    "static/media/publications.jpg": "/jamil-pf/static/media/publications.adc66021c32218e017f0.jpg",
+    "static/media/research_work_4.jpeg": "/jamil-pf/static/media/research_work_4.94e9dfb97eb205b11f0f.jpeg",
+    "static/media/research_work_5.jpeg": "/jamil-pf/static/media/research_work_5.cdb01e9ee26ac5d92491.jpeg",
     "static/media/skills.svg": "/jamil-pf/static/media/skills.270a5377d931f4c11ff568b58be69841.svg",
     "static/media/white.png": "/jamil-pf/static/media/white.0e0fde847d1ac31324f9.png",
     "static/media/cards.svg": "/jamil-pf/static/media/cards.2201e983496b507ecaa3.svg",
     "index.html": "/jamil-pf/index.html",
-    "main.0db4c11d.css.map": "/jamil-pf/static/css/main.0db4c11d.css.map",
-    "main.96791f4e.js.map": "/jamil-pf/static/js/main.96791f4e.js.map",
+    "main.ba989658.css.map": "/jamil-pf/static/css/main.ba989658.css.map",
+    "main.3ae3c033.js.map": "/jamil-pf/static/js/main.3ae3c033.js.map",
     "453.9c1a384f.chunk.js.map": "/jamil-pf/static/js/453.9c1a384f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0db4c11d.css",
-    "static/js/main.96791f4e.js"
+    "static/css/main.ba989658.css",
+    "static/js/main.3ae3c033.js"
   ]
 }
