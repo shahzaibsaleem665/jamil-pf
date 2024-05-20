@@ -22,9 +22,14 @@ function Cards({ icon, title, description, text, popupHeading, popupContent}) {
         <p>{description}</p>
         </div>
         <div className="cards__bottom">
+
+
           {/* using component Composition for the PopUp to be inside of another component. here Popup --> Cards > Home */}
-        <p onClick={handlePopupToggle}>Learn more<LaunchIcon /></p>
-        <PopUp isOpen={isPopupOpen} togglePopup={handlePopupToggle} heading={popupHeading} content={popupContent}/>
+
+          {/* The below component is comented and can be used when needed.  */}
+
+        {/* <p onClick={handlePopupToggle}>Learn more<LaunchIcon /></p>
+        <PopUp isOpen={isPopupOpen} togglePopup={handlePopupToggle} heading={popupHeading} content={popupContent}/> */}
         </div>
     </div>
   )

@@ -24,7 +24,7 @@ function Contact() {
             </div>
            <div className="contact__phone">
             <LocalPhoneIcon />
-            <p>0000 000 000</p>
+            <p>+61 468 412 720</p>
            </div>
 
             </div>

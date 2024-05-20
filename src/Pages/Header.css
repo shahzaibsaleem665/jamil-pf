@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    width: 100%;
     justify-content: center;
     background-color: black;
     position: sticky;
@@ -38,5 +39,4 @@
 .header__right > p.active{
 color: #287FB7;
 font-weight: bold;
-
 }

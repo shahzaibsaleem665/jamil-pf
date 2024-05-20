@@ -25,9 +25,7 @@ margin-top: 10px;
     align-items: center;
     height: auto;
     flex-direction: column;
-    background-image: url('../assets/pictures/publications.jpg');
-    background-position: cover;
-    background-size: cover;
+   background-color: #CCC;
     border-radius: 5px;
 }
     
