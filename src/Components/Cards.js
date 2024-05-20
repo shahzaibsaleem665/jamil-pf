@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Cards.css'
 import { IconButton } from '@mui/material'
 
 import LaunchIcon from '@mui/icons-material/Launch';
+import PopUp from './PopUp';
 
-function Cards({ icon, title, description, text}) {
+function Cards({ icon, title, description, text, popupHeading, popupContent}) {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handlePopupToggle = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
   return (
     <div className='cards'>
         <div className="cards__top">
@@ -15,7 +22,9 @@ function Cards({ icon, title, description, text}) {
         <p>{description}</p>
         </div>
         <div className="cards__bottom">
-<p>{text}<LaunchIcon /></p>
+          {/* using component Composition for the PopUp to be inside of another component. here Popup --> Cards > Home */}
+        <p onClick={handlePopupToggle}>Learn more<LaunchIcon /></p>
+        <PopUp isOpen={isPopupOpen} togglePopup={handlePopupToggle} heading={popupHeading} content={popupContent}/>
         </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import skills from '../assets/skills.svg'
 import Cards from '../Components/Cards'
@@ -8,9 +8,17 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Gallery from '../Components/Gallery';
 import BackToTop from '../Components/BackToTop';
+import PopUp from '../Components/PopUp';
 
 
 function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to toggle the popup
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
   
   return (
     <div className='home'>
@@ -39,13 +47,14 @@ function Home() {
           </div>
 
           <div className="home__cardsRight">
-            <Cards icon={<BuildCircleIcon />} title='Equipments and Tools' description='Proficiency in using a wide range of equipments and tools, including oscilloscopes, power analyzers, LCR meters.' text='Learn more'  />
+               {/* using component Composition for the PopUp to be inside of another component. here Popup --> Cards > Home */}
+            <Cards icon={<BuildCircleIcon />} title='Equipments and Tools' description='Proficiency in using a wide range of equipments and tools, including oscilloscopes, power analyzers, LCR meters.'  popupHeading='Tools' popupContent='Various tools to be used' />
 
-            <Cards icon={<CodeIcon />} title='Coding Languages' description='Experienced in C++ and Java with a strong understanding of object-oriented programming principles and their applications.' text='Learn more' />
+            <Cards icon={<CodeIcon />} title='Coding Languages' description='Experienced in C++ and Java with a strong understanding of object-oriented programming principles and their applications.'  popupHeading='Coding Languages' popupContent='Various Languages to be used' />
 
-            <Cards icon={<TerminalIcon />} title='Softwares and IDEs' description='Proficient in utilizing industry-standard software and IDEs like LTspice, MATLAB, and MPLab and Latex.' text='Learn more' />
+            <Cards icon={<TerminalIcon />} title='Softwares and IDEs' description='Proficient in utilizing industry-standard software and IDEs like LTspice, MATLAB, and MPLab and Latex.'  popupHeading='Softwares and Ides' popupContent='Various programming languages to be used' />
 
-            <Cards icon={<ConnectWithoutContactIcon />} title='Soft Skills' description='Effective communication skills and expertise in Spanish, Korean and English and supervision of interns ans students.' text='Learn more' />
+            <Cards icon={<ConnectWithoutContactIcon />} title='Soft Skills' description='Effective communication skills and expertise in Spanish, Korean and English and supervision of interns ans students.'  popupHeading='soft skills' popupContent='Various communicational skills to be used' />
           </div>
         </div>
 
