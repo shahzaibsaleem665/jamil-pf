@@ -2,6 +2,7 @@ import React from 'react';
 import './PopUp.css';
 
 function PopUp({ isOpen, togglePopup, heading, content }) {
+
   if (!isOpen) return null;
 
   return (
