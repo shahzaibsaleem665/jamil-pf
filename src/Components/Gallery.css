@@ -16,11 +16,18 @@
     scrollbar-color: #cecccc transparent;
     cursor: pointer;
     
-    &::-webkit-scrollbar {
-        width: 8px; /* Width of the scrollbar */
-        background-color: transparent;
-        border: 2px solid #999;
-      }   
+}
+.gallery__images::-webkit-scrollbar {
+  width: 5px; /* Adjust the width of the scrollbar */
+}
+
+.gallery__images::-webkit-scrollbar-track {
+  background-color: transparent; /* Make the scrollbar track transparent */
+}
+
+.gallery__images::-webkit-scrollbar-thumb {
+  background-color: #CCC; /* Light color for scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
 .enlarged__imageOverlay {
     position: fixed;
