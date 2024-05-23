@@ -5,10 +5,11 @@ import { useHistory, useLocation } from 'react-router-dom';
 
 function Header() {
   const [selectedButton, setSelectedButton] = useState('');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const history = useHistory();
   const location = useLocation();
+  
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const listItems = ['Home', 'Publications', 'Research Work', 'About me', 'Contact me'];
 
   useEffect(() => {
@@ -21,43 +22,47 @@ function Header() {
     const formattedItem = item.toLowerCase().replace(/\s+/g, '-');
     setSelectedButton(formattedItem);
     history.push(`/${formattedItem}`);
-    // Close mobile menu after clicking a menu item
-    setIsMobileMenuOpen(false);
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const homeNav = (e) => {
     e.preventDefault();
     history.push('/');
-    // Close mobile menu after clicking logo
-    setIsMobileMenuOpen(false);
-  };
+  }
+
+
 
   return (
     <div className='header'>
-      <div className="header__left">
-        <img src={white} alt='logo' onClick={homeNav}/>
-      </div>
-      
-      <div className={`header__right ${isMobileMenuOpen ? 'open' : ''}`}>
-        {/* Render hamburger icon for mobile */}
-        <div className="mobile-menu" onClick={toggleMobileMenu}>
-          <div className="menu-icon"></div>
+        <div className="header__left">
+            <img src={white} alt='logo' onClick={homeNav}/>
         </div>
-        {/* Render menu items */}
-        {listItems.map((item, index) => (
-          <p 
-            key={item} 
-            className={selectedButton === item.toLowerCase().replace(/\s+/g, '-') ? 'active' : ''} 
-            onClick={() => handleButtonClick(item)}
-          >
-            {item}
-          </p>
-        ))}
-      </div>
+        
+        <div className="header__right">
+          {listItems.map((item, index) => (
+            <p 
+              key={item} 
+              className={selectedButton === item.toLowerCase().replace(/\s+/g, '-') ? 'active' : ''} 
+              onClick={() => handleButtonClick(item)}
+            >
+              {item}
+            </p>
+          ))}
+        </div>
     </div>
   );
 }

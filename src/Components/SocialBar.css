@@ -4,9 +4,8 @@
     left: 92%;
 }
 .socialBar > .MuiSvgIcon-root {
-    
     color: black ;
-    font-size: 25px;
+    font-size: large;
     cursor: pointer;
 }
 .socialBar > a {
@@ -15,4 +14,10 @@
     margin-top: 10px !important;
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:576px) and (orientation: portrait) {
+    .socialBar > .MuiSvgIcon-root {
+        font-size: 16px;
+    }
 }

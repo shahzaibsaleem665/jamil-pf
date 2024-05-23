@@ -57,4 +57,8 @@
     max-height: 100%;
     object-fit: contain; /* Maintain aspect ratio of the image */
   }
-  
+  @media screen and (max-width:576px) and (orientation: portrait) {
+    .gallery > h1 {
+      font-size: 50px;
+    }
+}

@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+   width: 100%;
 }
 .publications__top {
     display: flex;
     width: 100%;
+    position: relative;
     align-items: center;
 justify-content: center;
 background-image: url('../assets/circuit.jpg');
@@ -14,9 +15,20 @@ background-position: center;
 background-size: cover;
 height: 200px;
 }
+.publications__top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value (last parameter) for the desired level of blur */
+    z-index: 1; /* Make sure the overlay is behind the text */
+}
 .publications__top > h1 {
     color: white;
     font-size: 80px;
+    z-index: 1;
 }
 .publications__content {
     display: flex;
@@ -28,4 +40,12 @@ margin-top: 10px;
    background-color: #CCC;
     border-radius: 5px;
 }
+@media screen and (max-width:576px) and (orientation: portrait) {
+    .publications__top > h1 {
+        font-size: 50px;
+    }
+    .publications__content {
+        background-color: transparent;
+    }
     
+}

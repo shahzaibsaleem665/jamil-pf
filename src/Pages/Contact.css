@@ -114,3 +114,59 @@
 .contact__mail > .MuiSvgIcon-root, .contact__phone >  .MuiSvgIcon-root {
    font-size: xx-large;
 }
+@media screen and (max-width:576px) and (orientation: portrait) { 
+    .contact__content {
+        height: auto;
+    }
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contact__formLeft, .contact__formRight {
+        width: 100%;
+        align-items: center;
+    }
+    .contact__formLeft {
+        justify-content: space-around;
+        height: 200px;
+       
+    }
+    .contact__formLeft > h1 {
+        font-size: 50px;
+        align-items: center;
+       
+    }
+    .contact__formLeft > h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+   .contact__methods {
+        align-items: center;
+    }
+    .contact__phone > p, .contact__mail > p {
+        font-size: 14px;
+    }
+    .contact__mail > .MuiSvgIcon-root, .contact__phone >  .MuiSvgIcon-root {
+        font-size: x-large;
+     }
+     .contact__formRight > form > input[type='text'],
+.contact__formRight > form > input[type='email'],
+.contact__formRight > form > input[type='number'],
+.contact__formRight > form > textarea,
+.contact__formRight > form > input::placeholder, .contact__formRight > form > textarea::placeholder {
+    font-size: 14px;
+}
+.contact__formRight > form > button {
+    font-size: 14px;
+    height: 30px;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+}
+.contact__formRight > form {
+    height: 80%;
+}
+    
+}

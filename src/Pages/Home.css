@@ -9,6 +9,7 @@
 
 }
 .home__container {
+    width: 100%;
     position: relative;
 height: 200px;
 background-image: url('../assets/pictures/home.jpg');
@@ -30,6 +31,7 @@ display: flex;
     z-index: 1; /* Make sure the overlay is behind the text */
 }
 .home__containerText {
+    width: 100%;
     margin-top: 10px;
     height: 200px;
     width: 80%;
@@ -52,6 +54,7 @@ display: flex;
 
 }
 .home__me {
+    width: 100%;
     display: flex;
     flex-direction: column;  
     align-items: center;
@@ -121,4 +124,81 @@ display: flex;
     align-items: center;
     justify-content: center;
     background-color: #287FB7;
+}
+
+
+
+/*  Reposnsiveness for all screen types*/
+
+@media screen and (max-width:576px) and (orientation: portrait) {
+    .home__containerText {
+        max-width: 100%;
+    }
+    .home__containerText > .title {
+    font-size: 49px;
+   }
+   .home__containerText > P {
+    font-size: 20px;
+   }
+   .home__me {
+    justify-content: center;
+   }
+   .home__me > .heading {
+    font-size: 50px;
+   }
+   .home__me > p {
+    font-size: 16px;
+   }
+   .home__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .home__cardsLeft {
+    display: flex;
+    width: auto;
+   }
+.home__cardsLeft > h1 {
+    font-size: 50px;
+
+}
+.home__cardsLeft > p {
+    font-size: 16px;
+   
+}
+.home__cardsLeft > img {
+    height: 150px;
+    margin-top: 60px;
+}
+   .home__cardsRight {
+   display: flex;
+   width: auto;
+   justify-content: center;
+   }
+   .home__gallery {
+    width: auto;
+   }
+
+}
+/* for tablets and bigger phones */
+@media (max-width: 576px) and (orientation: landscape) {
+  /* CSS Rules for Mobile Phones in Landscape */
+  
+}
+@media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+  /* CSS Rules for Tablets in Portrait */
+ 
+}
+@media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
+  /* CSS Rules for Tablets in Landscape */
+  
+}
+
+/* Below for latptops and Bigger screens */
+@media (min-width: 993px) and (max-width:1919px) {
+  
+}
+@media (min-width: 1920px)  {
+  
 }

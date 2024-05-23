@@ -1,8 +1,8 @@
 .header {
     display: flex;
     width: 100%;
-    justify-content: center;
-    background-color: black;
+    justify-content:center;
+    background-color: black;    
     position: sticky;
     z-index: 2;
 }
@@ -43,40 +43,13 @@ font-weight: bold;
 }
 
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .header__right {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #f9f9f9; /* Adjust background color */
-      width: 100%;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-  
-    .header__right.open {
-      display: flex;
-    }
-  
-    .header__right p {
-      margin: 10px 0;
-    }
-  
-    .mobile-menu {
-      display: block;
-    }
-  }
-
-
 
 /*  Reposnsiveness for all screen types*/
 
 @media screen and (max-width:576px) and (orientation: portrait) {
-   
+   .header__left > img {
+    width: 90px;
+   }
   }
   /* for tablets and bigger phones */
   @media (max-width: 576px) and (orientation: landscape) {

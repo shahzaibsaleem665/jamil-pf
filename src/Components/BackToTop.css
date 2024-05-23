@@ -14,3 +14,9 @@
     border: none;
     cursor: pointer;
 }
+@media screen and (max-width:576px) and (orientation: portrait) {
+   .backToTop > button {
+     padding: 5px;
+     margin-top: 10px;
+   }
+}

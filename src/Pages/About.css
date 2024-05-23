@@ -71,5 +71,42 @@
 
 .about__button > .MuiSvgIcon-root {
     font-size: 22px
+}
 
+@media screen and (max-width:576px) and (orientation: portrait) {
+    .about__main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .about__mainLeft, .about__mainRight {
+        width: auto;
+    }
+    .about__mainLeft > img {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .about__mainRight > h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .about__mainRight > p {
+        width: 95%;
+        font-size: 16px;
+        margin: 2px;
+    }
+    .about__button { 
+        font-size: 14px;
+        width: 100px;
+        padding: 5px;
+        margin: 10px;
+        margin-left: 2px;
+    }
+    .about__button > .MuiSvgIcon-root {
+        font-size: medium;
+    }
 }
