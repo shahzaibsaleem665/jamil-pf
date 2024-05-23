@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jamil-pf/static/css/main.ba989658.css",
-    "main.js": "/jamil-pf/static/js/main.3ae3c033.js",
+    "main.css": "/jamil-pf/static/css/main.2b67f114.css",
+    "main.js": "/jamil-pf/static/js/main.749bbeef.js",
     "static/js/453.9c1a384f.chunk.js": "/jamil-pf/static/js/453.9c1a384f.chunk.js",
     "static/media/contact.jpg": "/jamil-pf/static/media/contact.43008489f92b7d1a9aff.jpg",
     "static/media/home.jpg": "/jamil-pf/static/media/home.6b95f565647a708eef80.jpg",
@@ -29,12 +29,12 @@
     "static/media/white.png": "/jamil-pf/static/media/white.0e0fde847d1ac31324f9.png",
     "static/media/cards.svg": "/jamil-pf/static/media/cards.2201e983496b507ecaa3.svg",
     "index.html": "/jamil-pf/index.html",
-    "main.ba989658.css.map": "/jamil-pf/static/css/main.ba989658.css.map",
-    "main.3ae3c033.js.map": "/jamil-pf/static/js/main.3ae3c033.js.map",
+    "main.2b67f114.css.map": "/jamil-pf/static/css/main.2b67f114.css.map",
+    "main.749bbeef.js.map": "/jamil-pf/static/js/main.749bbeef.js.map",
     "453.9c1a384f.chunk.js.map": "/jamil-pf/static/js/453.9c1a384f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba989658.css",
-    "static/js/main.3ae3c033.js"
+    "static/css/main.2b67f114.css",
+    "static/js/main.749bbeef.js"
   ]
 }
