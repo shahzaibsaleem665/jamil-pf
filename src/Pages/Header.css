@@ -22,6 +22,7 @@
     width: 120px;
     height: 50px;
     margin: 10px;
+    cursor: pointer;
 }
 .header__right > a {
     text-decoration: none;
@@ -40,3 +41,61 @@
 color: #287FB7;
 font-weight: bold;
 }
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .header__right {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #f9f9f9; /* Adjust background color */
+      width: 100%;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  
+    .header__right.open {
+      display: flex;
+    }
+  
+    .header__right p {
+      margin: 10px 0;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+
+
+
+/*  Reposnsiveness for all screen types*/
+
+@media screen and (max-width:576px) and (orientation: portrait) {
+   
+  }
+  /* for tablets and bigger phones */
+  @media (max-width: 576px) and (orientation: landscape) {
+    /* CSS Rules for Mobile Phones in Landscape */
+    
+  }
+  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+    /* CSS Rules for Tablets in Portrait */
+   
+  }
+  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
+    /* CSS Rules for Tablets in Landscape */
+    
+  }
+  
+  /* Below for latptops and Bigger screens */
+  @media (min-width: 993px) and (max-width:1919px) {
+    
+  }
+  @media (min-width: 1920px)  {
+    
+  }

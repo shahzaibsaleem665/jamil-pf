@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import './Cards.css'
 import { IconButton } from '@mui/material'
 
-import LaunchIcon from '@mui/icons-material/Launch';
-import PopUp from './PopUp';
+// import LaunchIcon from '@mui/icons-material/Launch';
+// import PopUp from './PopUp';
 
 function Cards({ icon, title, description, text, popupHeading, popupContent}) {
 
