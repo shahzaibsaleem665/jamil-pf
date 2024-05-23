@@ -115,24 +115,25 @@
    font-size: xx-large;
 }
 @media screen and (max-width:576px) and (orientation: portrait) { 
-    .contact__content {
-        height: auto;
-    }
+  
     .contact__form {
         display: flex;
         flex-direction: column;
+        height: auto;
         padding: 0px;
         margin: 0px;
     }
     .contact__formLeft, .contact__formRight {
         width: 100%;
         align-items: center;
-    }
+        
+    } 
     .contact__formLeft {
         justify-content: space-around;
-        height: 200px;
+        height: 250px;
        
     }
+    
     .contact__formLeft > h1 {
         font-size: 50px;
         align-items: center;
@@ -164,9 +165,6 @@
     width: 20%;
     margin: 0px;
     padding: 0px;
-}
-.contact__formRight > form {
-    height: 80%;
 }
     
 }

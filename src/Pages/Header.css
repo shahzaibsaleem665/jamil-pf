@@ -47,7 +47,17 @@ font-weight: bold;
 /*  Reposnsiveness for all screen types*/
 
 @media screen and (max-width:576px) and (orientation: portrait) {
-   .header__left > img {
+   .header {
+    width: 100%;
+   }
+  .header__right {
+    display: none;
+  }
+   .header__right > p {
+    font-size: 14px;
+   }
+   
+    .header__left > img {
     width: 90px;
    }
   }
