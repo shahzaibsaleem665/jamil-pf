@@ -52,7 +52,7 @@
     justify-content: flex-start;
 }
 .about__button {
-    width: 15%;
+    width: 140px;
     display: flex;
     padding: 10px;
     border-radius: 5px;
@@ -70,7 +70,7 @@
 }
 
 .about__button > .MuiSvgIcon-root {
-    font-size: 22px
+    font-size: 20px
 }
 
 @media screen and (max-width:576px) and (orientation: portrait) {

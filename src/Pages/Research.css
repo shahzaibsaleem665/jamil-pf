@@ -89,13 +89,14 @@ background-color: #CCC;
     .research__top > h1 {
         font-size: 50px;
         width: 80%;
+        text-align: center;
     }
     .research__containerHeading > h1 {
-        font-size: 30px;
+        font-size: 28px;
         
     }
     .research__containerHeading > p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .research__containerText > p {
         font-size: 16px;

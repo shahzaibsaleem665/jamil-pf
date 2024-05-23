@@ -51,7 +51,8 @@ font-weight: bold;
     width: 100%;
    }
   .header__right {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
    .header__right > p {
     font-size: 14px;
