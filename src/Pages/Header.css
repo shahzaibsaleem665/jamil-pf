@@ -49,10 +49,10 @@ font-weight: bold;
 @media screen and (max-width:576px) and (orientation: portrait) {
    .header {
     width: 100%;
+    overflow: hidden;
    }
   .header__right {
     display: flex;
-    flex-direction: column;
   }
    .header__right > p {
     font-size: 14px;
