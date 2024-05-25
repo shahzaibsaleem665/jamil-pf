@@ -43,6 +43,54 @@ font-weight: bold;
 }
 
 
+.mobile__menu {
+  position: absolute; /* Position the menu items relative to the header */
+  top: 20%; /* Position the menu items below the header */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu__icon {
+  cursor: pointer;
+  width: auto;
+  outline: none;
+ 
+}
+.menu__icon:active {
+
+  outline: none;
+  color: inherit;
+}
+.menu__icon > .MuiSvgIcon-root {
+  color: white;
+  margin-left: 85%;
+  font-size: xx-large;
+}
+
+
+.mobile__menuItems {
+  display: flex;
+  flex-direction: column;
+  background-color: black; /* Match background color of header */
+  position: fixed; /* Position menu items */
+  text-align: center;
+  top: 75px; /* Position menu items below the header */
+  left: 0;
+  width: 100%; /* Take full width of screen */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+  z-index: 999; /* Ensure the menu items appear above other content */
+  
+}
+
+.mobile__menuItems p {
+  color: white; /* Set text color */
+  padding: 10px; /* Add padding for spacing */
+  margin: 0;
+  cursor: pointer;
+  border-top: 1px solid white; /* Add top border for separation */
+}
+
 
 /*  Reposnsiveness for all screen types*/
 
@@ -61,6 +109,9 @@ font-weight: bold;
     .header__left > img {
     width: 90px;
    }
+
+   
+
   }
   /* for tablets and bigger phones */
   @media (max-width: 576px) and (orientation: landscape) {
