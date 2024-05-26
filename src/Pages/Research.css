@@ -68,14 +68,14 @@ height: 200px;
 width: 100%;
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
 flex-wrap: wrap;
 margin-top: 20px;
 background-color: #CCC;
 
 }
 .research__containerPicture > img {
-    width: 350px;
+    width: 300px;
     height: 250px;
     margin: 15px;
     border-radius: 5px;
@@ -103,11 +103,12 @@ background-color: #CCC;
         font-size: 16px;
     }
     .research__containerPicture {
+
         align-items: center;
+        justify-content: center;
     }
     .research__containerPicture > img {
-        width: 150px;
-        height: 150px;
-        margin: 10px
+        width: 250px;
+        height: 200px;
     };
 }

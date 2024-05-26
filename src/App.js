@@ -40,7 +40,6 @@ function App() {
               <Home />
               <SocialBar />
             </Route>
-            
           </Switch>
         </div>
         <Footer />

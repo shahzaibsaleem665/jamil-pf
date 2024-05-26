@@ -8,6 +8,7 @@ import research_work_5 from '../assets/research_work/research_work_5.jpeg'
 import research_work_6 from '../assets/research_work/research_work_6.jpeg'
 import research_work_7 from '../assets/research_work/research_work_7.jpeg'
 import research_work_9 from '../assets/research_work/research_work_9.jpeg'
+import BackToTop from '../Components/BackToTop'
 
 function Research() {
   return (
@@ -35,6 +36,7 @@ function Research() {
             <img src={research_work_9} />
           </div>
         </div>
+        <BackToTop />
     </div>
   )
 }
