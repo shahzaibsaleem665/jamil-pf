@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import skills from '../assets/skills.svg'
 import Cards from '../Components/Cards'
@@ -8,17 +8,26 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Gallery from '../Components/Gallery';
 import BackToTop from '../Components/BackToTop';
-import PopUp from '../Components/PopUp';
 
 
 function Home() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+ 
 
-  const [isOpen, setIsOpen] = useState(false);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-  // Function to toggle the popup
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
+    // Add event listener to update window width on resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
   
   return (
     <div className='home'>
@@ -27,7 +36,7 @@ function Home() {
        <div className="home__container">
         <div className="home__containerText">
         <p className='title'>I am <strong style={{color: 'white'}}>Jamil Hassan.</strong></p>
-        <p>"A <strong>Power Electronics</strong> Engineer and Researcher"</p>
+        <p>"A <strong>Power Electronics</strong> Engineer and Researcher" {windowWidth}PX</p>
         </div>
        </div>
 

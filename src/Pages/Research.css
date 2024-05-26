@@ -68,6 +68,7 @@ height: 200px;
 width: 100%;
 display: flex;
 align-items: center;
+justify-content: space-around;
 flex-wrap: wrap;
 margin-top: 20px;
 background-color: #CCC;
@@ -103,11 +104,10 @@ background-color: #CCC;
     }
     .research__containerPicture {
         align-items: center;
-        justify-content: center;
     }
     .research__containerPicture > img {
         width: 150px;
         height: 150px;
-        margin: 15px
+        margin: 10px
     };
 }

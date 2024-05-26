@@ -55,6 +55,7 @@ function Header() {
     <div className="header">
     <div className="header__left">
       <img src={white} alt="logo" onClick={homeNav} />
+      
     </div>
     <div className="header__right">
       {windowWidth < 576 ? (
@@ -82,6 +83,7 @@ function Header() {
             onClick={() => handleButtonClick(item)}
           >
             {item}
+        
           </p>
         ))
       )}
