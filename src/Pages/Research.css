@@ -29,6 +29,7 @@ height: 200px;
 .research__top > h1 {
     color: white;
     font-size: 80px;
+    text-align: center;
     z-index: 1;
 }
 .research__container {
@@ -90,7 +91,6 @@ background-color: #CCC;
     .research__top > h1 {
         font-size: 50px;
         width: 80%;
-        text-align: center;
     }
     .research__containerHeading > h1 {
         font-size: 28px;
@@ -110,5 +110,20 @@ background-color: #CCC;
     .research__containerPicture > img {
         width: 250px;
         height: 200px;
+    };
+}
+@media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait)  {
+    .research__top > h1 {
+        font-size: 60px;
+    }
+    .research__top::before {
+        height: 280px;
+    }
+    .research__containerHeading > h1 {
+        margin-top: 10px;
+    }
+    .research__containerPicture > img {
+        width: 280px;
+        height: 220px;
     };
 }

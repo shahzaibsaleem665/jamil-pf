@@ -58,7 +58,7 @@ function Header() {
       
     </div>
     <div className="header__right">
-      {windowWidth < 576 ? (
+      {windowWidth  <=992 ? (
         <div className="mobile__menu">
           <div className="menu__icon" onClick={toggleMenu}> {isMenuOpen ? <CloseIcon /> : <MenuIcon />}</div>
           {isMenuOpen && (

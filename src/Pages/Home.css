@@ -101,7 +101,7 @@ display: flex;
     
 }
 .home__cardsLeft > p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: inherit;
     margin-left: 5px;
     width: 380px;
@@ -115,9 +115,9 @@ display: flex;
 .home__cardsRight  {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 60%;   
+    width: 60%;  
 }
 .home__gallery {
     display: flex;
@@ -133,8 +133,7 @@ display: flex;
 
 @media screen and (max-width:576px) and (orientation: portrait) {
     .home__containerText {
-        width: 100%;
-        
+        width: 80%;    
     }
     .home__containerText > .title {
     font-size: 40px;
@@ -188,12 +187,42 @@ display: flex;
 
 }
 /* for tablets and bigger phones */
-@media (max-width: 576px) and (orientation: landscape) {
+@media (max-width: px) and (orientation: landscape) {
   /* CSS Rules for Mobile Phones in Landscape */
   
 }
 @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
   /* CSS Rules for Tablets in Portrait */
+
+  .home__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .home__cardsLeft {
+    display: flex;
+    width: 100%;
+    height: auto;
+   }
+
+.home__cardsLeft > p {
+    font-size: 18px;
+    margin-top: 5px;
+    width: 100%;
+   
+}
+.home__cardsLeft > img {
+    height: 140px;
+}
+   .home__cardsRight {
+   display: flex;
+   margin-top: 20px;
+   width: 100%;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   }
  
 }
 @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {

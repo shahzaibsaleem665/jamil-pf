@@ -39,7 +39,7 @@
 .header__right > p:hover,
 .header__right > p.active{
 color: #287FB7;
-font-weight: bold;
+font-weight: normal;
 }
 
 
@@ -120,6 +120,20 @@ font-weight: bold;
   }
   @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
     /* CSS Rules for Tablets in Portrait */
+
+    .header {
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+     }
+     .menu__icon > .MuiSvgIcon-root {
+      color: white;
+      margin-left: 85%;
+      font-size: 40px;
+    }
+    .mobile__menuItems > p {
+    font-size: 18px;
+      }
    
   }
   @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {

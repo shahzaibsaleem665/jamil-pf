@@ -50,3 +50,8 @@ margin-top: 10px;
     }
     
 }
+@media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait)  {
+    .publications__top > h1 {
+        font-size: 60px;
+    }
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import './PopUp.css';
 
+import CloseIcon from '@mui/icons-material/Close';
+
 function PopUp({ isOpen, togglePopup, heading, content }) {
 
   if (!isOpen) return null;
@@ -11,7 +13,7 @@ function PopUp({ isOpen, togglePopup, heading, content }) {
         <div className="popup__header">
           <h2>{heading}</h2>
           <span className="close__icon" onClick={togglePopup}>
-            &#10006; {/* Cross icon */}
+            <CloseIcon /> {/* Cross icon */}
           </span>
         </div>
         <p>{content}</p>

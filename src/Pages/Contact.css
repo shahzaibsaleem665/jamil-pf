@@ -35,19 +35,20 @@
 
 .contact__formRight {   
     display: flex;
+    width: 50%;
 }
 .contact__formRight > form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 95%;
-    justify-content: space-between;
+    height: 90%;
+    justify-content: center;
  
 }
 .contact__formRight > form > input, .contact__formRight > form > textarea {
     width: 80%;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -82,20 +83,25 @@
 .contact__formLeft {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
 }
 .contact__formLeft > h1 {
-    font-size: 80px;
-    padding: 5px;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 10px;
+    margin-bottom: 0px;
 }
-.contact__formLeft > h4 {
-    font-size: 20px;
-    padding: 10px;
+.contact__formLeft > p {
+    font-size: 18px;
+    margin: 10px;
+    
     font-weight: normal;
 }
 
 .contact__methods {
     display: flex;
+    margin-top: 10%;
     justify-content: space-between;
 }
 .contact__mail,.contact__phone  {
@@ -108,7 +114,7 @@
     display: flex;
     align-items: center ;
     margin: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Roboto;
 }
 .contact__mail > .MuiSvgIcon-root, .contact__phone >  .MuiSvgIcon-root {
@@ -133,16 +139,14 @@
         height: 250px;
        
     }
-    .contact__formRight {
-
-    }
+   
     
     .contact__formLeft > h1 {
         font-size: 50px;
         align-items: center;
        
     }
-    .contact__formLeft > h4 {
+    .contact__formLeft > p {
         font-size: 16px;
         text-align: center;
     }
@@ -168,6 +172,26 @@
     width: 30%;
     margin: 0px;
     padding: 0px;
+    color: black;
 }
     
+}
+@media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+    .contact__content {
+        height: 86vh;
+    }
+    .contact__form {
+        height: auto;
+        width: 80%;
+    }
+    .contact__formLeft {
+        width: 55%;
+    }
+    .contact__formRight {
+        width: 45%;
+    }
+    .contact__formLeft > h1 {
+        font-size: 50px;
+    }
+
 }

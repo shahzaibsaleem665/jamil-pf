@@ -14,9 +14,9 @@
 
 .popup__inner {
   position: relative;
-  width: 500px;
-  width: 25%;
+  width: 55%;
   max-height: 75%;
+  margin-top: 40px;
   background: white;
   border-radius: 10px;
   overflow-y: auto; /* Enable scrolling if content exceeds popup height */
@@ -55,10 +55,10 @@
   margin: 0;
 }
 
-.close__icon {
+.close__icon > .MuiSvgIcon-root {
   cursor: pointer;
   display: flex;
-  font-size: 24px;
+  font-size: xx-large;
   width: 30px;
   align-items: center;
   justify-content: center;
@@ -66,7 +66,7 @@
 @media screen and (max-width:576px) and (orientation: portrait) {
   .popup__inner {
     width: 70%;
-    height: 450px;
-    margin-top: 20%;
+    height: 500px;
+    margin-top: 5%;
   }
 }
