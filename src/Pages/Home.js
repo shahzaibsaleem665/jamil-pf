@@ -36,7 +36,7 @@ function Home() {
        <div className="home__container">
         <div className="home__containerText">
         <p className='title'>I am <strong style={{color: 'white'}}>Jamil Hassan.</strong></p>
-        <p>"A <strong>Power Electronics</strong> Engineer and Researcher" {windowWidth}PX</p>
+        <p>"A <strong>Power Electronics</strong> Engineer and Researcher" </p>
         </div>
        </div>
 
