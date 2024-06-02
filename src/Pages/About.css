@@ -93,6 +93,12 @@
         padding: 0px;
         
     }
+    .about__mainRight {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
     .about__mainRight > h1 {
         font-size: 50px;
         text-align: center;
