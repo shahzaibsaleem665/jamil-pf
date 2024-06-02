@@ -44,7 +44,6 @@ display: flex;
     font-size: 78px;
     margin-top: 20px;
     width: 750px;
-    padding: 5px;
 }
 .home__containerText > p{ 
     font-size: 22px;
@@ -136,7 +135,7 @@ display: flex;
         width: 80%;    
     }
     .home__containerText > .title {
-    font-size: 40px;
+    font-size: 38px;
    }
    .home__containerText > P {
     font-size:18px;
@@ -181,9 +180,7 @@ display: flex;
    width: auto;
    justify-content: center;
    }
-   .home__gallery {
-    width: auto;
-   }
+   
 
 }
 /* for tablets and bigger phones */
@@ -204,7 +201,7 @@ display: flex;
    .home__cardsLeft {
     display: flex;
     width: 100%;
-    height: auto;
+    height: auto  ;
    }
 
 .home__cardsLeft > p {
